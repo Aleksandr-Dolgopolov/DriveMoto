@@ -1,0 +1,32 @@
+.bredcrumbs {
+  margin-bottom: 40px;
+
+}
+
+.bredcrumbs__item {
+  position: relative;
+
+  display: inline-block;
+  padding-right: 16px;
+  margin-right: 10px;
+
+  font-size: 15px;
+  line-height: 18px;
+  color: $grey;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 4px;
+
+    width: 6px;
+    height: 10px;
+
+    background: url('../images/content/link-arrow.svg') no-repeat top / contain;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}

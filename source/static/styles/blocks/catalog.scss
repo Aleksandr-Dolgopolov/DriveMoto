@@ -1,0 +1,182 @@
+.catalog {
+  margin-bottom: 100px;
+}
+
+.catalog__title {
+  margin-bottom: 26px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.catalog__filter {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+}
+
+.catalog__filter-items button {
+  padding: 5px 22px;
+
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.7;
+
+  background-color: $light-grey;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.catalog__filter-items button+.catalog__filter-items button {
+  margin-left: 8px;
+}
+
+.filter-btn button {
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-btn button+.filter-btn button {
+  margin-left: 10px;
+}
+
+.filter-select {
+  margin-right: 34px;
+
+  font-size: 14px;
+  line-height: 17px;
+
+  border: 1.5px solid #D7D9DF;
+}
+
+.filter-btn__grid {
+  width: 26px;
+  height: 21px;
+}
+
+.filter-btn__line {
+  width: 25px;
+  height: 19px;
+}
+
+.filter-button {
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.catalog__inner {
+  display: flex;
+}
+
+.acide__btn {
+  display: none;
+}
+
+.catalog__inner-aside {
+  min-width: 290px;
+  margin-right: 10px;
+}
+
+.catalog__inner-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & .product-item__wrapper {
+    margin-bottom: 30px;
+
+    transition: all .3s;
+  }
+}
+
+.product-item__wrapper.product-item__wrapper--list {
+  width: 100%;
+}
+
+.product-item {
+  width: 100%;
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__item {
+  padding: 6px 12px;
+  margin: 0 4px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $grey;
+
+  &--active {
+    color: $blue;
+    border: 2px solid $blue;
+  }
+}
+
+.pagination__item a {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+
+  .catalog__inner-list {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 940px) {
+
+  .catalog__inner-list {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .catalog__inner {
+    flex-wrap: wrap;
+  }
+
+  .acide__btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+
+    background-color: $blue;
+  }
+
+  .catalog__inner-aside {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .pagination__item {
+    margin: 0;
+  }
+}

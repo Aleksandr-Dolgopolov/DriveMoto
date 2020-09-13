@@ -1,0 +1,99 @@
+@import "helpers/vars.scss";
+// @import "helpers/mixins.scss";
+@import "helpers/fonts.scss";
+// @import "helpers/sprite";
+// .sprites(@spritesheet-sprites);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $font-color;
+  overflow-x: hidden;
+  // background-color: @bg--body;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+@import "helpers/slick.scss";
+@import "helpers/slick-slider.scss";
+@import "helpers/container.scss";
+@import "helpers/page-section";
+
+//Модули
+@import "blocks/blocks";

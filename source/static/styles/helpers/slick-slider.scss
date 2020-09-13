@@ -1,0 +1,31 @@
+.slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.slick-dots button {
+  width: 11px;
+  height: 11px;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.slick-slide img {
+  display: inline-block;
+}
